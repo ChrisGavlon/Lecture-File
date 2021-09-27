@@ -21,7 +21,7 @@ function App() {
     <CakeForm handleAddCake={handleAddCake}/>
     <Search />
     {selectedCake ? <CakeDetail cake={selectedCake}/> : null}
-    {cakeList.map(cake => <CakeCard cake={cake} setSelectedCake={setSelectedCake}/> )}
+    {cakeList.map(cake => <CakeCard cake={cake} setSelectedCake={setSelectedCake} selectedCake={selectedCake}/> )}
     </>
   );
 }
